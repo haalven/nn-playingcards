@@ -10,6 +10,7 @@ from torchvision.datasets import ImageFolder
 from matplotlib import pyplot
 from PIL import Image
 from os import environ
+from os.path import basename
 from sys import argv, exit
 
 
@@ -122,7 +123,7 @@ def visualize_predictions(original_image, probabilities, class_names):
     pyplot.show()
 
 # the test image
-myname = argv.pop(0)
+myname = basename(argv.pop(0))
 syntax = f'syntax: {myname} <IMAGEFILE>'
 if not argv: exit(syntax)
 test_image = '\x20'.join(argv)
