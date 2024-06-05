@@ -1,4 +1,4 @@
-# playingcards
+# nn-playingcards
 
 classify images using [pytorch on apple silicon hardware](https://developer.apple.com/metal/pytorch).
 
