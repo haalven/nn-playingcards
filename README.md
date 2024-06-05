@@ -1,7 +1,7 @@
 # playingcards
 
-classify images using pytorch on apple silicon hardware
+classify images using [pytorch on apple silicon hardware](https://developer.apple.com/metal/pytorch).
 
-required: pytorch, torchvision, timm and matplotlib
+required: [pytorch](https://pytorch.org/) incl. [torchvision](https://pytorch.org/vision), [timm](https://github.com/huggingface/pytorch-image-models) and [mpl](https://matplotlib.org/).
 
-download the playingcards [here](https://github.com/xeaydin/Card-Image-Classification/tree/master/Dataset) and adjust cards_folder accordingly
+download the playingcards [here](https://github.com/xeaydin/Card-Image-Classification/tree/master/Dataset) and adjust `cards_folder` accordingly
