@@ -19,3 +19,5 @@ training state will be saved to `playingcards_trainstate.pt`
 ## test image
 
 run `playingcards_classify.py <IMAGEFILE>`
+
+![Image](result.jpg)
