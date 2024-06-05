@@ -4,4 +4,4 @@ classify images using pytorch on apple silicon hardware
 
 required: pytorch, torchvision, matplotlib
 
-download the playingcards [here](https://github.com/xeaydin/Card-Image-Classification/tree/master/Dataset). 
+download the playingcards [here](https://github.com/xeaydin/Card-Image-Classification/tree/master/Dataset) and adjust cards_folder accordingly
