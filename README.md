@@ -9,3 +9,13 @@ pip3 install torch torchvision timm matplotlib
 ```
 
 download the playingcards [here](https://github.com/xeaydin/Card-Image-Classification/tree/master/Dataset) and adjust `cards_folder` accordingly
+
+## training
+
+run `playingcards_training.py`
+
+training state will be saved to `playingcards_trainstate.pt`
+
+## classify
+
+run `playingcards_classify.py <IMAGEFILE>`
