@@ -25,3 +25,13 @@ run `playingcards_classify.py <IMAGEFILE>`
 example output:
 
 ![Image](result.jpg)
+
+## performance
+
+training on the M2 macbook:
+
+__cpu__: 875 sec per epoch
+
+__mps__: 47 sec per epoch
+
+mps is __≈18 times faster__ than cpu.
