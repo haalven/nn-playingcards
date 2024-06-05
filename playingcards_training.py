@@ -5,9 +5,10 @@
 
 import torch, timm
 from torch.utils.data import Dataset, DataLoader
-from torchvision import transforms
 from torchvision.datasets import ImageFolder
+from torchvision import transforms
 from os import environ
+from time import time
 
 
 # datasets
@@ -89,6 +90,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
 # the training loop
 train_losses, val_losses = [], []
+timestamp = time()
 for epoch in range(num_epochs):
 
     # training phase
@@ -124,7 +126,10 @@ for epoch in range(num_epochs):
     # report
     print(f'train loss: {train_loss}, val loss: {val_loss}')
 
-
+# timer result
+total_sec = time() - timestamp
+epoch_sec = total_sec / num_epochs
+print(f'total: {total_sec} sec, per epoch: {epoch_sec} sec')
 
 # save training state
 
