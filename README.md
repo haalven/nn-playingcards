@@ -2,4 +2,4 @@
 
 required: pytorch, torchvision, matplotlib
 
-adjust the path to the playingcards image folder
+download the playingcards [here](https://github.com/xeaydin/Card-Image-Classification/tree/master/Dataset). 
