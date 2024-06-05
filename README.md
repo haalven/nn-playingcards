@@ -16,6 +16,6 @@ run `playingcards_training.py`
 
 training state will be saved to `playingcards_trainstate.pt`
 
-## classify
+## test image
 
 run `playingcards_classify.py <IMAGEFILE>`
