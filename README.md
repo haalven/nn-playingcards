@@ -22,6 +22,6 @@ training state will be saved to `playingcards_trainstate.pt`
 
 run `playingcards_classify.py <IMAGEFILE>`
 
-example result:
+example output:
 
 ![Image](result.jpg)
