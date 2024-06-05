@@ -81,7 +81,7 @@ class SimpleCardClassifer(torch.nn.Module):
 # training
 
 # epochs
-num_epochs = 4
+num_epochs = 1
 
 # load model to device
 metal = torch.device('mps')  # Apple silicon hardware
@@ -129,6 +129,21 @@ for epoch in range(num_epochs):
 
     # report
     print(f'train loss: {train_loss}, val loss: {val_loss}')
+
+
+
+# save training state
+
+def save_model(model, path):
+    torch.save(model.state_dict(), path)
+
+def load_model(model, path):
+    model.load_state_dict(torch.load(path))
+    model.eval()
+    return model
+
+state_path = 'playingcards_trainstate.pt'
+save_model(model, state_path)
 
 
 
