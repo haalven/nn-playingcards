@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# playing cards classifier (neural network) - classification
+# playing cards classifier (neural network) - classify
 
 
 import torch, timm
