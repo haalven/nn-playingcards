@@ -81,7 +81,7 @@ class SimpleCardClassifer(torch.nn.Module):
 # training
 
 # epochs
-num_epochs = 1
+num_epochs = 3
 
 # load model to device
 metal = torch.device('mps')  # Apple silicon hardware
