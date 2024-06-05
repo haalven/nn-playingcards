@@ -12,6 +12,8 @@ download the playingcards [here](https://github.com/xeaydin/Card-Image-Classific
 
 ## training
 
+adjust `num_epochs` (more is better but takes longer)
+
 run `playingcards_training.py`
 
 training state will be saved to `playingcards_trainstate.pt`
