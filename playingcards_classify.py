@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# playing cards classifier (neural network) - classify
+# playing cards classifier (neural network) - classification
 
 
 import torch, timm
@@ -10,6 +10,7 @@ from torchvision.datasets import ImageFolder
 from matplotlib import pyplot
 from PIL import Image
 from os import environ
+from sys import argv, exit
 
 
 # datasets
@@ -121,7 +122,10 @@ def visualize_predictions(original_image, probabilities, class_names):
     pyplot.show()
 
 # the test image
-test_image = tests_folder + '/queen of clubs/3.jpg'
+myname = argv.pop(0)
+syntax = f'syntax: {myname} <IMAGEFILE>'
+if not argv: exit(syntax)
+test_image = '\x20'.join(argv)
 original_image, image_tensor = preprocess_image(test_image, transform)
 probabilities = predict(model, image_tensor, metal)
 class_names = tests_dataset.classes 
